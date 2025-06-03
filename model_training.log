@@ -1,0 +1,610 @@
+2025-06-02 17:12:39,123 - INFO - Fetching historical games for 2023-24
+2025-06-02 17:15:04,912 - INFO - Found 22439 games for 385 players
+2025-06-02 17:15:04,915 - INFO - Calculating rolling statistics
+2025-06-02 17:15:05,810 - ERROR - Error training model for points: "['points_3game_avg', 'points_5game_avg', 'points_10game_avg', 'minutes_3game_avg'] not in index"
+2025-06-02 17:15:05,811 - ERROR - Error training model for assists: "['points_3game_avg', 'minutes_3game_avg', 'team_pace'] not in index"
+2025-06-02 17:15:05,811 - ERROR - Error training model for rebounds: "['oreb_3game_avg', 'dreb_3game_avg', 'minutes_3game_avg', 'opp_reb_allowed'] not in index"
+2025-06-02 17:15:05,811 - ERROR - Error training model for blocks: "['minutes_3game_avg', 'opp_blk_allowed'] not in index"
+2025-06-02 17:15:05,812 - ERROR - Error training model for steals: "['minutes_3game_avg', 'opp_stl_allowed'] not in index"
+2025-06-02 17:15:05,812 - ERROR - Error training model for threes: "['minutes_3game_avg', 'opp_3pt_allowed'] not in index"
+2025-06-02 17:15:05,812 - INFO - Model training completed successfully
+2025-06-02 17:17:04,008 - INFO - Fetching historical games for 2023-24
+2025-06-02 17:18:40,640 - INFO - Found 22439 games for 385 players
+2025-06-02 17:18:40,644 - INFO - Calculating rolling statistics
+2025-06-02 17:18:41,194 - INFO - Training model for Points
+2025-06-02 17:18:54,535 - INFO - Model performance for Points:
+2025-06-02 17:18:54,536 - INFO - Accuracy: 1.000
+2025-06-02 17:18:54,536 - INFO - AUC-ROC: 1.000
+2025-06-02 17:18:54,536 - INFO - 
+Classification Report:
+2025-06-02 17:18:54,540 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2454
+           1       1.00      1.00      1.00      2034
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:18:54,562 - INFO - Saved model to nba_points_predictor.pkl
+2025-06-02 17:18:54,565 - INFO - Training model for Assists
+2025-06-02 17:19:04,088 - INFO - Model performance for Assists:
+2025-06-02 17:19:04,089 - INFO - Accuracy: 1.000
+2025-06-02 17:19:04,089 - INFO - AUC-ROC: 1.000
+2025-06-02 17:19:04,089 - INFO - 
+Classification Report:
+2025-06-02 17:19:04,092 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2681
+           1       1.00      1.00      1.00      1807
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:19:04,106 - INFO - Saved model to nba_assists_predictor.pkl
+2025-06-02 17:19:04,108 - INFO - Training model for Rebounds
+2025-06-02 17:19:12,184 - INFO - Model performance for Rebounds:
+2025-06-02 17:19:12,185 - INFO - Accuracy: 1.000
+2025-06-02 17:19:12,185 - INFO - AUC-ROC: 1.000
+2025-06-02 17:19:12,185 - INFO - 
+Classification Report:
+2025-06-02 17:19:12,188 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2759
+           1       1.00      1.00      1.00      1729
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:19:12,200 - INFO - Saved model to nba_rebounds_predictor.pkl
+2025-06-02 17:19:12,202 - INFO - Training model for Blocks
+2025-06-02 17:19:20,046 - INFO - Model performance for Blocks:
+2025-06-02 17:19:20,048 - INFO - Accuracy: 1.000
+2025-06-02 17:19:20,048 - INFO - AUC-ROC: 1.000
+2025-06-02 17:19:20,048 - INFO - 
+Classification Report:
+2025-06-02 17:19:20,051 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2973
+           1       1.00      1.00      1.00      1515
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:19:20,109 - INFO - Saved model to nba_blocks_predictor.pkl
+2025-06-02 17:19:20,113 - INFO - Training model for Steals
+2025-06-02 17:19:28,726 - INFO - Model performance for Steals:
+2025-06-02 17:19:28,726 - INFO - Accuracy: 1.000
+2025-06-02 17:19:28,726 - INFO - AUC-ROC: 1.000
+2025-06-02 17:19:28,726 - INFO - 
+Classification Report:
+2025-06-02 17:19:28,730 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2361
+           1       1.00      1.00      1.00      2127
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:19:28,744 - INFO - Saved model to nba_steals_predictor.pkl
+2025-06-02 17:19:28,747 - INFO - Training model for 3-Pointers
+2025-06-02 17:19:36,352 - INFO - Model performance for 3-Pointers:
+2025-06-02 17:19:36,352 - INFO - Accuracy: 1.000
+2025-06-02 17:19:36,352 - INFO - AUC-ROC: 1.000
+2025-06-02 17:19:36,352 - INFO - 
+Classification Report:
+2025-06-02 17:19:36,355 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2978
+           1       1.00      1.00      1.00      1510
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:19:36,368 - INFO - Saved model to nba_threes_predictor.pkl
+2025-06-02 17:19:36,369 - INFO - Model training completed successfully
+2025-06-02 17:20:05,834 - INFO - Fetching historical games for 2023-24
+2025-06-02 17:21:29,894 - INFO - Found 22439 games for 385 players
+2025-06-02 17:21:29,896 - INFO - Calculating rolling statistics
+2025-06-02 17:21:30,445 - INFO - Training model for Points
+2025-06-02 17:21:42,548 - INFO - Model performance for Points:
+2025-06-02 17:21:42,549 - INFO - Accuracy: 1.000
+2025-06-02 17:21:42,549 - INFO - AUC-ROC: 1.000
+2025-06-02 17:21:42,549 - INFO - 
+Classification Report:
+2025-06-02 17:21:42,553 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2454
+           1       1.00      1.00      1.00      2034
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:21:42,613 - INFO - Saved model to nba_points_predictor.pkl
+2025-06-02 17:21:42,616 - INFO - Training model for Assists
+2025-06-02 17:21:53,134 - INFO - Model performance for Assists:
+2025-06-02 17:21:53,134 - INFO - Accuracy: 1.000
+2025-06-02 17:21:53,134 - INFO - AUC-ROC: 1.000
+2025-06-02 17:21:53,134 - INFO - 
+Classification Report:
+2025-06-02 17:21:53,137 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2681
+           1       1.00      1.00      1.00      1807
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:21:53,159 - INFO - Saved model to nba_assists_predictor.pkl
+2025-06-02 17:21:53,160 - INFO - Training model for Rebounds
+2025-06-02 17:22:01,620 - INFO - Model performance for Rebounds:
+2025-06-02 17:22:01,620 - INFO - Accuracy: 1.000
+2025-06-02 17:22:01,620 - INFO - AUC-ROC: 1.000
+2025-06-02 17:22:01,620 - INFO - 
+Classification Report:
+2025-06-02 17:22:01,624 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2759
+           1       1.00      1.00      1.00      1729
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:22:01,636 - INFO - Saved model to nba_rebounds_predictor.pkl
+2025-06-02 17:22:01,638 - INFO - Training model for Blocks
+2025-06-02 17:22:10,501 - INFO - Model performance for Blocks:
+2025-06-02 17:22:10,501 - INFO - Accuracy: 1.000
+2025-06-02 17:22:10,501 - INFO - AUC-ROC: 1.000
+2025-06-02 17:22:10,501 - INFO - 
+Classification Report:
+2025-06-02 17:22:10,504 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2973
+           1       1.00      1.00      1.00      1515
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:22:10,517 - INFO - Saved model to nba_blocks_predictor.pkl
+2025-06-02 17:22:10,519 - INFO - Training model for Steals
+2025-06-02 17:22:20,847 - INFO - Model performance for Steals:
+2025-06-02 17:22:20,847 - INFO - Accuracy: 1.000
+2025-06-02 17:22:20,847 - INFO - AUC-ROC: 1.000
+2025-06-02 17:22:20,847 - INFO - 
+Classification Report:
+2025-06-02 17:22:20,850 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2361
+           1       1.00      1.00      1.00      2127
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:22:20,863 - INFO - Saved model to nba_steals_predictor.pkl
+2025-06-02 17:22:20,866 - INFO - Training model for 3-Pointers
+2025-06-02 17:22:29,508 - INFO - Model performance for 3-Pointers:
+2025-06-02 17:22:29,508 - INFO - Accuracy: 1.000
+2025-06-02 17:22:29,508 - INFO - AUC-ROC: 1.000
+2025-06-02 17:22:29,508 - INFO - 
+Classification Report:
+2025-06-02 17:22:29,512 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2978
+           1       1.00      1.00      1.00      1510
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:22:29,525 - INFO - Saved model to nba_threes_predictor.pkl
+2025-06-02 17:22:29,525 - INFO - Model training completed successfully
+2025-06-02 17:33:09,504 - INFO - Fetching historical games for 2023-24
+2025-06-02 17:34:45,016 - INFO - Found 22439 games for 385 players
+2025-06-02 17:34:45,018 - INFO - Calculating rolling statistics
+2025-06-02 17:34:45,552 - INFO - Training model for Points
+2025-06-02 17:34:57,512 - INFO - Model performance for Points:
+2025-06-02 17:34:57,512 - INFO - Accuracy: 1.000
+2025-06-02 17:34:57,512 - INFO - AUC-ROC: 1.000
+2025-06-02 17:34:57,512 - INFO - 
+Classification Report:
+2025-06-02 17:34:57,516 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2454
+           1       1.00      1.00      1.00      2034
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:34:57,530 - INFO - Saved model to nba_points_predictor.pkl
+2025-06-02 17:34:57,532 - INFO - Training model for Assists
+2025-06-02 17:35:06,893 - INFO - Model performance for Assists:
+2025-06-02 17:35:06,894 - INFO - Accuracy: 1.000
+2025-06-02 17:35:06,894 - INFO - AUC-ROC: 1.000
+2025-06-02 17:35:06,894 - INFO - 
+Classification Report:
+2025-06-02 17:35:06,898 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2681
+           1       1.00      1.00      1.00      1807
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:35:06,911 - INFO - Saved model to nba_assists_predictor.pkl
+2025-06-02 17:35:06,913 - INFO - Training model for Rebounds
+2025-06-02 17:35:14,834 - INFO - Model performance for Rebounds:
+2025-06-02 17:35:14,835 - INFO - Accuracy: 1.000
+2025-06-02 17:35:14,835 - INFO - AUC-ROC: 1.000
+2025-06-02 17:35:14,835 - INFO - 
+Classification Report:
+2025-06-02 17:35:14,838 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2759
+           1       1.00      1.00      1.00      1729
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:35:14,852 - INFO - Saved model to nba_rebounds_predictor.pkl
+2025-06-02 17:35:14,854 - INFO - Training model for Blocks
+2025-06-02 17:35:22,735 - INFO - Model performance for Blocks:
+2025-06-02 17:35:22,736 - INFO - Accuracy: 1.000
+2025-06-02 17:35:22,736 - INFO - AUC-ROC: 1.000
+2025-06-02 17:35:22,736 - INFO - 
+Classification Report:
+2025-06-02 17:35:22,739 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2973
+           1       1.00      1.00      1.00      1515
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:35:22,752 - INFO - Saved model to nba_blocks_predictor.pkl
+2025-06-02 17:35:22,754 - INFO - Training model for Steals
+2025-06-02 17:35:31,673 - INFO - Model performance for Steals:
+2025-06-02 17:35:31,674 - INFO - Accuracy: 1.000
+2025-06-02 17:35:31,674 - INFO - AUC-ROC: 1.000
+2025-06-02 17:35:31,674 - INFO - 
+Classification Report:
+2025-06-02 17:35:31,677 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2361
+           1       1.00      1.00      1.00      2127
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:35:31,690 - INFO - Saved model to nba_steals_predictor.pkl
+2025-06-02 17:35:31,692 - INFO - Training model for 3-Pointers
+2025-06-02 17:35:39,762 - INFO - Model performance for 3-Pointers:
+2025-06-02 17:35:39,762 - INFO - Accuracy: 1.000
+2025-06-02 17:35:39,762 - INFO - AUC-ROC: 1.000
+2025-06-02 17:35:39,762 - INFO - 
+Classification Report:
+2025-06-02 17:35:39,765 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2978
+           1       1.00      1.00      1.00      1510
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:35:39,778 - INFO - Saved model to nba_threes_predictor.pkl
+2025-06-02 17:35:39,778 - INFO - Model training completed successfully
+2025-06-02 17:38:19,634 - INFO - Fetching historical games for 2023-24
+2025-06-02 17:39:47,098 - INFO - Found 22439 games for 385 players
+2025-06-02 17:39:47,100 - INFO - Calculating rolling statistics
+2025-06-02 17:39:47,622 - INFO - Training model for Points
+2025-06-02 17:39:59,533 - INFO - Model performance for Points:
+2025-06-02 17:39:59,534 - INFO - Accuracy: 1.000
+2025-06-02 17:39:59,534 - INFO - AUC-ROC: 1.000
+2025-06-02 17:39:59,534 - INFO - 
+Classification Report:
+2025-06-02 17:39:59,537 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2454
+           1       1.00      1.00      1.00      2034
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:39:59,551 - INFO - Saved model to nba_points_predictor.pkl
+2025-06-02 17:39:59,556 - INFO - Training model for Assists
+2025-06-02 17:40:08,963 - INFO - Model performance for Assists:
+2025-06-02 17:40:08,963 - INFO - Accuracy: 1.000
+2025-06-02 17:40:08,963 - INFO - AUC-ROC: 1.000
+2025-06-02 17:40:08,963 - INFO - 
+Classification Report:
+2025-06-02 17:40:08,967 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2681
+           1       1.00      1.00      1.00      1807
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:40:09,020 - INFO - Saved model to nba_assists_predictor.pkl
+2025-06-02 17:40:09,048 - INFO - Training model for Rebounds
+2025-06-02 17:40:17,036 - INFO - Model performance for Rebounds:
+2025-06-02 17:40:17,038 - INFO - Accuracy: 1.000
+2025-06-02 17:40:17,038 - INFO - AUC-ROC: 1.000
+2025-06-02 17:40:17,038 - INFO - 
+Classification Report:
+2025-06-02 17:40:17,041 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2759
+           1       1.00      1.00      1.00      1729
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:40:17,054 - INFO - Saved model to nba_rebounds_predictor.pkl
+2025-06-02 17:40:17,056 - INFO - Training model for Blocks
+2025-06-02 17:40:25,897 - INFO - Model performance for Blocks:
+2025-06-02 17:40:25,897 - INFO - Accuracy: 1.000
+2025-06-02 17:40:25,897 - INFO - AUC-ROC: 1.000
+2025-06-02 17:40:25,897 - INFO - 
+Classification Report:
+2025-06-02 17:40:25,900 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2973
+           1       1.00      1.00      1.00      1515
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:40:25,917 - INFO - Saved model to nba_blocks_predictor.pkl
+2025-06-02 17:40:25,922 - INFO - Training model for Steals
+2025-06-02 17:40:34,589 - INFO - Model performance for Steals:
+2025-06-02 17:40:34,590 - INFO - Accuracy: 1.000
+2025-06-02 17:40:34,590 - INFO - AUC-ROC: 1.000
+2025-06-02 17:40:34,590 - INFO - 
+Classification Report:
+2025-06-02 17:40:34,593 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2361
+           1       1.00      1.00      1.00      2127
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:40:34,607 - INFO - Saved model to nba_steals_predictor.pkl
+2025-06-02 17:40:34,612 - INFO - Training model for 3-Pointers
+2025-06-02 17:40:44,030 - INFO - Model performance for 3-Pointers:
+2025-06-02 17:40:44,032 - INFO - Accuracy: 1.000
+2025-06-02 17:40:44,032 - INFO - AUC-ROC: 1.000
+2025-06-02 17:40:44,032 - INFO - 
+Classification Report:
+2025-06-02 17:40:44,036 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2978
+           1       1.00      1.00      1.00      1510
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:40:44,050 - INFO - Saved model to nba_threes_predictor.pkl
+2025-06-02 17:40:44,050 - INFO - Model training completed successfully
+2025-06-02 17:49:21,896 - INFO - Fetching historical games for 2023-24
+2025-06-02 17:51:31,888 - INFO - Found 22439 games for 385 players
+2025-06-02 17:51:31,892 - INFO - Calculating rolling statistics
+2025-06-02 17:51:32,434 - INFO - Training model for Points
+2025-06-02 17:51:44,304 - INFO - Model performance for Points:
+2025-06-02 17:51:44,304 - INFO - Accuracy: 1.000
+2025-06-02 17:51:44,305 - INFO - AUC-ROC: 1.000
+2025-06-02 17:51:44,305 - INFO - 
+Classification Report:
+2025-06-02 17:51:44,308 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2454
+           1       1.00      1.00      1.00      2034
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:51:44,369 - INFO - Saved model to nba_points_predictor.pkl
+2025-06-02 17:51:44,384 - INFO - Training model for Assists
+2025-06-02 17:51:54,289 - INFO - Model performance for Assists:
+2025-06-02 17:51:54,289 - INFO - Accuracy: 1.000
+2025-06-02 17:51:54,289 - INFO - AUC-ROC: 1.000
+2025-06-02 17:51:54,289 - INFO - 
+Classification Report:
+2025-06-02 17:51:54,292 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2681
+           1       1.00      1.00      1.00      1807
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:51:54,306 - INFO - Saved model to nba_assists_predictor.pkl
+2025-06-02 17:51:54,308 - INFO - Training model for Rebounds
+2025-06-02 17:52:02,510 - INFO - Model performance for Rebounds:
+2025-06-02 17:52:02,510 - INFO - Accuracy: 1.000
+2025-06-02 17:52:02,510 - INFO - AUC-ROC: 1.000
+2025-06-02 17:52:02,510 - INFO - 
+Classification Report:
+2025-06-02 17:52:02,513 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2759
+           1       1.00      1.00      1.00      1729
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:52:02,526 - INFO - Saved model to nba_rebounds_predictor.pkl
+2025-06-02 17:52:02,528 - INFO - Training model for Blocks
+2025-06-02 17:52:11,038 - INFO - Model performance for Blocks:
+2025-06-02 17:52:11,039 - INFO - Accuracy: 1.000
+2025-06-02 17:52:11,039 - INFO - AUC-ROC: 1.000
+2025-06-02 17:52:11,039 - INFO - 
+Classification Report:
+2025-06-02 17:52:11,043 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2973
+           1       1.00      1.00      1.00      1515
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:52:11,056 - INFO - Saved model to nba_blocks_predictor.pkl
+2025-06-02 17:52:11,059 - INFO - Training model for Steals
+2025-06-02 17:52:20,124 - INFO - Model performance for Steals:
+2025-06-02 17:52:20,124 - INFO - Accuracy: 1.000
+2025-06-02 17:52:20,124 - INFO - AUC-ROC: 1.000
+2025-06-02 17:52:20,124 - INFO - 
+Classification Report:
+2025-06-02 17:52:20,127 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2361
+           1       1.00      1.00      1.00      2127
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:52:20,140 - INFO - Saved model to nba_steals_predictor.pkl
+2025-06-02 17:52:20,142 - INFO - Training model for 3-Pointers
+2025-06-02 17:52:28,109 - INFO - Model performance for 3-Pointers:
+2025-06-02 17:52:28,110 - INFO - Accuracy: 1.000
+2025-06-02 17:52:28,110 - INFO - AUC-ROC: 1.000
+2025-06-02 17:52:28,110 - INFO - 
+Classification Report:
+2025-06-02 17:52:28,113 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2978
+           1       1.00      1.00      1.00      1510
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:52:28,126 - INFO - Saved model to nba_threes_predictor.pkl
+2025-06-02 17:52:28,126 - INFO - Model training completed successfully
+2025-06-02 17:56:44,893 - INFO - Fetching historical games for 2023-24
+2025-06-02 17:58:46,750 - INFO - Found 22439 games for 385 players
+2025-06-02 17:58:46,753 - INFO - Calculating rolling statistics
+2025-06-02 17:58:47,279 - INFO - Training model for Points
+2025-06-02 17:58:59,280 - INFO - Model performance for Points:
+2025-06-02 17:58:59,281 - INFO - Accuracy: 1.000
+2025-06-02 17:58:59,281 - INFO - AUC-ROC: 1.000
+2025-06-02 17:58:59,281 - INFO - 
+Classification Report:
+2025-06-02 17:58:59,285 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2454
+           1       1.00      1.00      1.00      2034
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:58:59,299 - INFO - Saved model to nba_points_predictor.pkl
+2025-06-02 17:58:59,302 - INFO - Training model for Assists
+2025-06-02 17:59:08,625 - INFO - Model performance for Assists:
+2025-06-02 17:59:08,626 - INFO - Accuracy: 1.000
+2025-06-02 17:59:08,626 - INFO - AUC-ROC: 1.000
+2025-06-02 17:59:08,626 - INFO - 
+Classification Report:
+2025-06-02 17:59:08,629 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2681
+           1       1.00      1.00      1.00      1807
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:59:08,643 - INFO - Saved model to nba_assists_predictor.pkl
+2025-06-02 17:59:08,645 - INFO - Training model for Rebounds
+2025-06-02 17:59:17,018 - INFO - Model performance for Rebounds:
+2025-06-02 17:59:17,018 - INFO - Accuracy: 1.000
+2025-06-02 17:59:17,018 - INFO - AUC-ROC: 1.000
+2025-06-02 17:59:17,018 - INFO - 
+Classification Report:
+2025-06-02 17:59:17,021 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2759
+           1       1.00      1.00      1.00      1729
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:59:17,035 - INFO - Saved model to nba_rebounds_predictor.pkl
+2025-06-02 17:59:17,036 - INFO - Training model for Blocks
+2025-06-02 17:59:25,082 - INFO - Model performance for Blocks:
+2025-06-02 17:59:25,083 - INFO - Accuracy: 1.000
+2025-06-02 17:59:25,083 - INFO - AUC-ROC: 1.000
+2025-06-02 17:59:25,083 - INFO - 
+Classification Report:
+2025-06-02 17:59:25,086 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2973
+           1       1.00      1.00      1.00      1515
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:59:25,100 - INFO - Saved model to nba_blocks_predictor.pkl
+2025-06-02 17:59:25,102 - INFO - Training model for Steals
+2025-06-02 17:59:33,812 - INFO - Model performance for Steals:
+2025-06-02 17:59:33,813 - INFO - Accuracy: 1.000
+2025-06-02 17:59:33,813 - INFO - AUC-ROC: 1.000
+2025-06-02 17:59:33,813 - INFO - 
+Classification Report:
+2025-06-02 17:59:33,816 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2361
+           1       1.00      1.00      1.00      2127
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:59:33,831 - INFO - Saved model to nba_steals_predictor.pkl
+2025-06-02 17:59:33,834 - INFO - Training model for 3-Pointers
+2025-06-02 17:59:41,553 - INFO - Model performance for 3-Pointers:
+2025-06-02 17:59:41,554 - INFO - Accuracy: 1.000
+2025-06-02 17:59:41,554 - INFO - AUC-ROC: 1.000
+2025-06-02 17:59:41,554 - INFO - 
+Classification Report:
+2025-06-02 17:59:41,557 - INFO -               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      2978
+           1       1.00      1.00      1.00      1510
+
+    accuracy                           1.00      4488
+   macro avg       1.00      1.00      1.00      4488
+weighted avg       1.00      1.00      1.00      4488
+
+2025-06-02 17:59:41,569 - INFO - Saved model to nba_threes_predictor.pkl
+2025-06-02 17:59:41,569 - INFO - Model training completed successfully
